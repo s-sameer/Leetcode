@@ -8,6 +8,8 @@ class Solution(object):
         """
         :type nums: List[int]
         :rtype: int
+        Two pointer approach - one pointer to iterate through the array 
+        and another pointer to tell us where to place the next unique element
         """
         j = 1
         for i in range(1, len(nums)):
