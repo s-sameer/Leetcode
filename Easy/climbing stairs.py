@@ -16,6 +16,7 @@ class Solution(object):
         # return climbStaris(n-1) + climbStairs(n-2)
 
         # optimized tabulation approach
+        # Recursive problems can usually be solved using dp concepts
         if n<=1:
             return 1
         
