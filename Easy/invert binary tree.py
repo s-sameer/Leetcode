@@ -16,6 +16,7 @@ class Solution(object):
         if root is None:
             return
 
+        # We want to sawp the nodes itself and not just the values
         tmp = root.left
         root.left = root.right
         root.right = tmp
