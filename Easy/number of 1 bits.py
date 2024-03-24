@@ -13,3 +13,10 @@ class Solution(object):
         return binRep.count('1')
 
         # return n.bit_count() --> one liner
+    
+        # Alternate solution, no built-in functions
+        # res = 0
+        # while n:
+        #     res += n & 1
+        #     n >>= 1
+        # return res
