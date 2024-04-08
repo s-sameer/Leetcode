@@ -7,7 +7,6 @@ The tests are generated such that there is exactly one solution. You may not use
 
 Your solution must use only constant extra space.
 '''
-# Intuition: As I was told that the array is sorted, I can use binary search to find the elements that add up to the target
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         first, last = 0, len(numbers)-1
