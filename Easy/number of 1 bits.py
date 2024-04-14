@@ -20,3 +20,11 @@ class Solution(object):
         #     res += n & 1
         #     n >>= 1
         # return res
+
+        # algorithm for converting decimal to binary
+        def decimal_to_binary(n):
+            binary = ''
+            while n > 0:
+                binary = str(n % 2) + binary
+                n = n // 2
+            return binary
