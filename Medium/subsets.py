@@ -11,10 +11,10 @@ class Solution:
             if i >= len(nums):
                 res.append(subset.copy())
                 return
-            
+            # include the current element
             subset.append(nums[i])
             dfs(i+1)
-
+            # exclude the current element
             subset.pop()
             dfs(i+1)
 
